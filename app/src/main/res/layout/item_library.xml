@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+
+   >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#455A64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_library"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/headphone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:alpha="1"/>
+
+            <TextView
+                android:id="@+id/text_library"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Mazyar Fallahi-Doroghe"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/image_library"
+                app:layout_constraintTop_toTopOf="@+id/image_library"
+                android:alpha="0.7"
+                android:fontFamily="casual"/>
+
+            <ImageView
+                android:id="@+id/imageViewTedad"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/headphone_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/image_library"
+                app:layout_constraintEnd_toStartOf="@+id/tedad_library"
+                app:layout_constraintStart_toEndOf="@+id/image_library" />
+
+            <TextView
+                android:id="@+id/tedad_library"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="33"
+                android:textColor="#FFEB3B"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewTedad"
+                app:layout_constraintStart_toEndOf="@+id/imageViewTedad"
+                app:layout_constraintTop_toTopOf="@+id/imageViewTedad" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
